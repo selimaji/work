@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body class="hind-vadodara-regular">
+
+<section class="topHeader">
+    <a href="#"
+       onclick="selectTab(event)"
+       class="{{ Request::is('drivers') ? 'selected' : '' }}">
+        Per Drivers
+    </a>
+    <a href="#"
+       onclick="selectTab(event)" class="{{ Request::is('restorantet') ? 'selected' : '' }}">
+        Per Restorantet
+    </a>
+    <a href="#"
+       onclick="selectTab(event)" class="{{ Request::is('kompnait') ? 'selected' : '' }}">
+        Per Kompnait B2B
+    </a>
+    <a href="#"
+       onclick="selectTab(event)" class="{{ Request::is('support') ? 'selected' : '' }}">
+        Per Support
+    </a>
+</section>
+
+<section class="topperSection">
+    <div class="threeBackgroundImages">
+        <img src="index.svg" alt="1">
+        <img src="index2.svg" alt="2">
+        <img style="margin-left: 40px" src="index3.svg" alt="3">
+    </div>
+
+    <detail class="detailTop">
+        <p style="color: white">Baboon <em><span>@WORK</span></em></p>
+        Do te kursesh kohën e drekës ne zyrë? Te është mërzitur i njëjti gatim cdo ditë?
+        Do te hash ushqim te kontrolluar dhe te përgatitur?
+        <br>
+        <br>
+        <span style="font-weight: bold;">Baboon At Work</span> ka zgjidhjen më inovative në
+        <span style="font-weight: bold;">Tirane</span> per kompanin ku ti punon,
+        duke të mundësuar kuzhina të specializuara per katering.
+        <br>
+        Cdo ditë Ndryshe, Shpejt, Shijshem
+    </detail>
+
+    <div class="tableSection">
+        <img class="index4Svg" src="index4.svg" alt="4" width="150" height="120">
+        <img src="index5.svg" alt="5" width="300" height="400">
+    </div>
+</section>
+
+<section class="decribe">
+    <div class="decribeBody">
+        <h1>Baboon At Work <span style="font-weight: normal;"> cfarë është?</span></h1>
+        <detail style="font-size: 16px; line-height: 20px;font-weight: normal">
+            Me shërbimin ton korporativ <span style="font-weight: bold;"> Baboon at Work</span>
+            , ti mund te kursesh kohë dhe te hash ne zyrë dhe shpejtë. Zgjidh nga një gamë e gjerë
+            e restorantesh te specializuara dhe programo porositë e tua deri ne një javë përpara.
+            Për ty është <span style="font-weight: bold;"> FALAS</span> kompania do të paguaj për ty.
+            Për punojësine zgjidhje inovative, e shpejtë, cilësore dhe teknologji e thjeshtë në përdorim.
+        </detail>
+    </div>
+</section>
+
+<section class="pcImage">
+    <div style="max-width: 300px;">
+        <section style="font-size: 16px;color: black;">
+            <span style="font-weight: bold;">Baboon At Work </span> paneli i menaxhimit
+        </section>
+
+        <section style="font-size: 20px;color: black; margin-top: 20px">
+            <span style="font-weight: bold;color: black">Menaxho</span> gjithcka në një vend.
+        </section>
+        <br>
+        <detail style="font-size: 12px;line-height: 12px;letter-spacing: -0.025em;">
+            Me Portalin <span style="font-weight: bold;">Baboon At Work </span>, ti ke kontroll te drejtpërdrejtë se
+            kush kryen
+            porosi per llogari te kompanisë. Analizo porositë e kaluara, shto dhe hiq përdorues, shkarko faturat dhe
+            materialet e tjera te kontabilitetit.
+        </detail>
+    </div>
+    <img src="index6.svg" alt=index6.svg width="400" height="300">
+</section>
+
+<section class="formParent">
+    <form id="submissionForm">
+        <div class="headerDescription">
+            <p>Na jep <em><span>kontaktin</span></em> për të filluar </p>
+            <div class="test">
+                <p>bashkëpunimin</p>
+            </div>
+        </div>
+
+        <input id="companyNameInput" type="text" placeholder="Emri i Kompanis" required>
+
+        <div class="telephone-input">
+            <input id="phoneNumberInput" class="phone-number" placeholder="Vendos Numrin e telefonit">
+            <select id="countryCodeSelect"></select>
+        </div>
+
+        <select class="sector">
+            <option value="Sektori">Sektori</option>
+            <option value="Two">Two</option>
+        </select>
+
+        <button type="submit">
+            Apliko tani
+        </button>
+    </form>
+</section>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
